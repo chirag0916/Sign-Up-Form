@@ -1,12 +1,92 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  
 }
 
 form {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border: 1px solid #ddd;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  border: 1px solid #ccc;
+  max-width: 600px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.container img {
+  max-width: 40%;
+  width: 30%;
+}
+
+label {
+  display: block;
+  min-width: 50px;
+  text-align: left;
+}
+
+.top-para {
+  width: 500px;
+}
+
+.dragon {
+  position: absolute; /* Position relative to the container */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-165%, -50%); /* Adjust for exact center */
+  max-width: 100px;
+  width: 10%; /* Set a specific width for the overlay image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.button-account {
+  color: white;
+  background-color: #596D48;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 30px;
   border-radius: 5px;
-  max-width: 300px;
+  font-weight: bold;
+}
+
+input {
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+}
+
+input:valid {
+  border: 1px solid #E5E7EB;
+}
+
+input:invalid {
+  border: 1px solid red;
+  
+}
+
+input:focus {
+  border: 1px solid blue;
+}
+
+.form-layout {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 40px;
+
+}
+
+form h3 {
+  margin-top: 0px;
+}
+
+form p {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
